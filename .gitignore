@@ -61,3 +61,7 @@
 /Encryption/obj/Encryption.csproj.nuget.g.props
 /Encryption/obj/project.assets.json
 /Encryption/obj/project.nuget.cache
+*.wsuo
+*.vsidx
+/.vs/Encryption/v17/.futdcache.v2
+/.vs/Encryption/v17/.suo

@@ -26,7 +26,6 @@ namespace Encryption.Controllers
         {
             try
             {
-                Console.WriteLine($"Received Payload: {payload}");
 
                 // Extract the encryptedData correctly
                 if (!payload.TryGetProperty("encryptedData", out JsonElement encryptedElement))
@@ -35,16 +34,10 @@ namespace Encryption.Controllers
                 }
 
                 string encryptedData = encryptedElement.GetString();
-                Console.WriteLine($"Extracted Encrypted Data: {encryptedData}");
-
-                // Decrypt the received data
                 string decryptedData = _aesHelper.Decrypt(encryptedData);
-                Console.WriteLine($"Decrypted Data: {decryptedData}");
 
-                // Deserialize into model
                 MyDataModel receivedData = Newtonsoft.Json.JsonConvert.DeserializeObject<MyDataModel>(decryptedData);
 
-                // Process and create response
                 var responseList = receivedData.data.Select(item => new DataReturn
                 {
                     Name = item.FirstName.ToUpper() +" "+ item.LastName.ToUpper(),
@@ -53,7 +46,6 @@ namespace Encryption.Controllers
 
                 var responseModel = responseList;
 
-                // Serialize and encrypt response
                 string jsonResponse = Newtonsoft.Json.JsonConvert.SerializeObject(responseModel);
                 string encryptedResponse = _aesHelper.Encrypt(jsonResponse);
 
