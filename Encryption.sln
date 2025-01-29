@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{AE039618-7307-4481-9E69-65A20ECC3DEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiEndpoint", "apiEndpoint\apiEndpoint.csproj", "{2742E13D-5F45-4635-9B25-D23172BF8B97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE039618-7307-4481-9E69-65A20ECC3DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE039618-7307-4481-9E69-65A20ECC3DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE039618-7307-4481-9E69-65A20ECC3DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2742E13D-5F45-4635-9B25-D23172BF8B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2742E13D-5F45-4635-9B25-D23172BF8B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2742E13D-5F45-4635-9B25-D23172BF8B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2742E13D-5F45-4635-9B25-D23172BF8B97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

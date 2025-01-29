@@ -21,7 +21,7 @@ namespace Encryption.Controllers
         {
             try
             {
-                string externalApiUrl = "https://external-api-url.com/endpoint";
+                string externalApiUrl = "https://localhost:7014/api/Home/receive-encrypted";
 
                 // Send encrypted data and get decrypted response
                 string response = await _externalApiService.SendEncryptedDataAsync(data, externalApiUrl);
